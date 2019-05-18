@@ -1,7 +1,9 @@
 # TinyWebIO实验版
 
 ## 说明
-为App Inventor应用提供远程控制接口的掌控板工具包
+为App Inventor应用提供远程控制接口的掌控板工具包。
+TinyWebIO由roadlabs开发，原地址为：
+https://gitee.com/roadlabs/TinyWebIO
 
 ## 安装
 可通过以下任一方法进行安装。
