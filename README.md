@@ -3,8 +3,11 @@
 ## 说明
 为App Inventor应用提供远程控制接口的掌控板工具包。
 
-**说明**：TinyWebIO的需求为谢作如提出，roadlabs开发，老巫婆为之编写了DEMO，原地址为：
+**说明**：
+1. TinyWebIO的需求为谢作如提出，roadlabs开发，老巫婆为之编写了DEMO，原地址为：
 https://gitee.com/roadlabs/TinyWebIO
+2. TinyWebIO的功能已经整合在掌控板的官方编程工具mPythonX中，mPythonX的下载地址为：
+https://www.mpython.cn/mPython/software
 
 ## 安装
 可通过以下任一方法进行安装。
