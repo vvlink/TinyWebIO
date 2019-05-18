@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>查询数据</title>
+  	<meta charset='uft-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+    <style>
+    *+*{box-sizing:border-box;margin:.5em 0}@media(min-width:35em){.col{display:table-cell}.\31{width:5%}.\33{width:22%}.\34{width:30%}.\35{width:40%}.\32{width:15%}.row{display:table;border-spacing:1em 0}}.row,.w-100{width:100%}.card:focus,hr{outline:0;border:solid #fa0}.card,pre{padding:1em;border:solid #eee}.btn:hover,a:hover{opacity:.6}.c{max-width:60em;padding:1em;margin:auto;font:1em/1.6 nunito}a{color:#fa0;text-decoration:none}.btn.primary{color:#fff;background:#fa0;border:solid #fa0}pre{overflow:auto}td,th{padding:1em;text-align:left;border-bottom:solid #eee}.btn{cursor:pointer;padding:1em;letter-spacing:.1em;text-transform:uppercase;background:#fff;border:solid;font:.7em nunito}
+    </style>
+  </head>
+  <body class='c'>
+    <form action="http://192.168.1.103:8888/getvalue" method="post" enctype=application/x-www-form-urlencoded target="result">
+        <label for='tag'>标签</label>
+        <input type="text" name="tag" class='card w-100' />
+        <input type="hidden" name="fmt" value="html"/>
+        <input type="submit" class='btn primary' value="读取" />
+    </form>
+    <div class='row'>
+      <iframe name='result' frameborder='0' scrolling='no' class='col c12'></iframe>
+    </div>
+  </body>
+</html>

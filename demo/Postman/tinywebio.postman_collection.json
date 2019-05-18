@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "b00836ce-7a32-459e-99a6-0957e177110c",
+		"name": "tinywebio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getvalue",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tag",
+							"value": "light",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.103:8888/getvalue?",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"103"
+					],
+					"port": "8888",
+					"path": [
+						"getvalue"
+					],
+					"query": [
+						{
+							"key": "tag",
+							"value": "light",
+							"disabled": true
+						},
+						{
+							"key": "fmt",
+							"value": "html",
+							"disabled": true
+						}
+					]
+				},
+				"description": "从掌控板读取数据"
+			},
+			"response": []
+		},
+		{
+			"name": "storeavalue",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tag",
+							"value": "buzz",
+							"type": "text"
+						},
+						{
+							"key": "value",
+							"value": "off",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.103:8888/storeavalue",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"103"
+					],
+					"port": "8888",
+					"path": [
+						"storeavalue"
+					]
+				},
+				"description": "向掌控板写入数据"
+			},
+			"response": []
+		},
+		{
+			"name": "storeavalue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://192.168.1.103:8888/storeavalue?tag=buzz&value=off&fmt=html",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"103"
+					],
+					"port": "8888",
+					"path": [
+						"storeavalue"
+					],
+					"query": [
+						{
+							"key": "tag",
+							"value": "buzz"
+						},
+						{
+							"key": "value",
+							"value": "off"
+						},
+						{
+							"key": "fmt",
+							"value": "html"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getvalue",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://192.168.1.103:8888/getvalue?tag=light&fmt=html",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"103"
+					],
+					"port": "8888",
+					"path": [
+						"getvalue"
+					],
+					"query": [
+						{
+							"key": "tag",
+							"value": "light"
+						},
+						{
+							"key": "fmt",
+							"value": "html"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
